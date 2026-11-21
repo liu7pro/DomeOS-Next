@@ -1,44 +1,93 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-color-mode="dark">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>页面未找到 — DomeOS-Next</title>
-<meta name="theme-color" content="#05060a" />
+<meta name="theme-color" content="#070b13" />
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('dn-theme');
+      var mode = saved === 'light' || saved === 'dark'
+        ? saved
+        : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-color-mode', mode);
+    } catch (e) {}
+  })();
+</script>
 <style>
-  html { background: #05060a; color-scheme: dark; }
+  :root {
+    color-scheme: dark;
+    --bg: #070b13;
+    --text: #e8eef8;
+    --text-2: #9aa8bd;
+    --blue: #4f8cff;
+    --cyan: #67e8f9;
+    --ink: #061020;
+    --glow: rgba(79, 140, 255, .20);
+  }
+  html[data-color-mode="light"] {
+    color-scheme: light;
+    --bg: #f4f7fd;
+    --text: #0d1a2c;
+    --text-2: #4e6079;
+    --blue: #2563eb;
+    --cyan: #0e7490;
+    --ink: #ffffff;
+    --glow: rgba(37, 99, 235, .16);
+  }
+  html { background: var(--bg); }
   body {
-    margin: 0; min-height: 100vh; display: grid; place-items: center;
-    font-family: "Segoe UI Variable Display", "Segoe UI", "Microsoft YaHei UI", sans-serif;
-    color: #eef1f7;
-    background: radial-gradient(ellipse 60% 50% at 50% 20%, rgba(167,139,250,.14), transparent 70%);
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: "Segoe UI Variable Text", "Segoe UI", "PingFang SC", "Microsoft YaHei UI", sans-serif;
+    color: var(--text);
+    background:
+      radial-gradient(50% 42% at 50% 12%, var(--glow), transparent 70%),
+      var(--bg);
     text-align: center;
   }
   .wrap { padding: 40px 24px; }
-  img { width: 56px; height: 56px; margin: 0 auto 26px; border-radius: 16px; }
+  img { width: 62px; height: 62px; margin: 0 auto 26px; border-radius: 16px; }
   .code {
-    font-size: clamp(72px, 16vw, 132px); font-weight: 760; line-height: 1;
-    letter-spacing: -0.06em;
-    background: linear-gradient(180deg, #fff 20%, #d8ccff);
-    -webkit-background-clip: text; background-clip: text;
-    color: transparent; -webkit-text-fill-color: transparent;
+    font-size: clamp(76px, 16vw, 132px);
+    font-weight: 760;
+    line-height: 1;
+    letter-spacing: -.055em;
+    background: linear-gradient(180deg, var(--text) 10%, var(--blue) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
   }
-  h1 { margin: 16px 0 0; font-size: 20px; font-weight: 650; letter-spacing: -0.02em; }
-  p { margin: 10px 0 28px; font-size: 13.5px; color: #99a2b2; }
+  h1 { margin: 18px 0 0; font-size: 20px; font-weight: 650; letter-spacing: -.01em; }
+  p { margin: 10px 0 28px; font-size: 13.5px; color: var(--text-2); }
   a {
-    display: inline-flex; align-items: center; height: 44px; padding: 0 24px;
-    border-radius: 999px; font-size: 14px; font-weight: 600;
-    color: #0d0a17; background: linear-gradient(135deg, #a78bfa, #5eead4);
+    display: inline-flex;
+    align-items: center;
+    height: 44px;
+    padding: 0 24px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    background: var(--blue);
     text-decoration: none;
+    box-shadow: 0 10px 26px var(--glow);
+    transition: transform .25s ease;
   }
+  a:hover { transform: translateY(-2px); }
 </style>
 </head>
 <body>
   <div class="wrap">
     <img src="assets/logo.svg" alt="DomeOS-Next" />
     <div class="code">404</div>
-    <h1>这里没有页面</h1>
-    <p>你访问的地址不存在，或者页面已经被移走。</p>
+    <h1>这个页面不在系统里</h1>
+    <p>地址可能已经变更，或者页面被精简掉了。</p>
     <a href="/DomeOS-Next/">返回 DomeOS-Next 首页</a>
   </div>
 </body>

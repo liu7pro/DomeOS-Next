@@ -1,8 +1,82 @@
+/* DomeOS-Next — 主题令牌
+   基于原版 Windows 的精简方案：Fluent 蓝、柔和表面、清晰层级 */
+
 :root {
-  --accent: #a78bfa;
-  --accent-2: #5eead4;
-  --accent-soft: rgba(167, 139, 250, 0.11);
-  --accent-line: rgba(167, 139, 250, 0.34);
-  --h1-end: #d8ccff;
-  --btn-text: #0d0a17;
+  color-scheme: dark;
+
+  --bg: #070b13;
+  --bg-2: #0b1220;
+  --bg-3: #0f1a2c;
+
+  --surface: rgba(255, 255, 255, .045);
+  --surface-2: rgba(255, 255, 255, .075);
+  --surface-3: rgba(255, 255, 255, .11);
+
+  --border: rgba(255, 255, 255, .09);
+  --border-strong: rgba(255, 255, 255, .17);
+
+  --text: #e8eef8;
+  --text-2: #9aa8bd;
+  --text-3: #63738a;
+
+  --blue: #4f8cff;
+  --blue-soft: #7fb1ff;
+  --cyan: #67e8f9;
+
+  --accent: #4f8cff;
+  --accent-ink: #061020;
+  --accent-g: rgba(79, 140, 255, .13);
+
+  --glow: rgba(79, 140, 255, .22);
+  --glow-2: rgba(103, 232, 249, .12);
+
+  --shadow-sm: 0 8px 22px rgba(0, 0, 0, .28);
+  --shadow: 0 24px 70px rgba(0, 0, 0, .46);
+
+  --header: rgba(7, 11, 19, .72);
+  --header-line: rgba(255, 255, 255, .07);
+
+  --grid-line: rgba(255, 255, 255, .035);
+  --meter-track: rgba(255, 255, 255, .08);
+  --noise: .045;
+}
+
+html[data-color-mode="light"] {
+  color-scheme: light;
+
+  --bg: #f4f7fd;
+  --bg-2: #eaf1fb;
+  --bg-3: #dfeaf9;
+
+  --surface: rgba(255, 255, 255, .72);
+  --surface-2: rgba(255, 255, 255, .88);
+  --surface-3: rgba(255, 255, 255, .97);
+
+  --border: rgba(18, 48, 92, .10);
+  --border-strong: rgba(18, 48, 92, .18);
+
+  --text: #0d1a2c;
+  --text-2: #4e6079;
+  --text-3: #8191a8;
+
+  --blue: #2563eb;
+  --blue-soft: #1d4ed8;
+  --cyan: #0e7490;
+
+  --accent: #2563eb;
+  --accent-ink: #ffffff;
+  --accent-g: rgba(37, 99, 235, .09);
+
+  --glow: rgba(37, 99, 235, .16);
+  --glow-2: rgba(14, 116, 144, .10);
+
+  --shadow-sm: 0 6px 18px rgba(23, 55, 100, .07);
+  --shadow: 0 26px 64px rgba(23, 55, 100, .14);
+
+  --header: rgba(248, 251, 255, .80);
+  --header-line: rgba(18, 48, 92, .08);
+
+  --grid-line: rgba(18, 48, 92, .045);
+  --meter-track: rgba(18, 48, 92, .10);
+  --noise: .03;
 }
