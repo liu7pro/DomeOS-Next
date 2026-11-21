@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DomeOS-Next — 下一代 Windows 精简体验</title>
+<meta name="description" content="DomeOS-Next 是 DomeOS Team 打造的新一代 Windows 精简方案，在保留完整功能的前提下降低系统占用。" />
+<meta name="theme-color" content="#05060a" />
+<meta name="color-scheme" content="dark" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="DomeOS-Next — 下一代 Windows 精简体验" />
+<meta property="og:description" content="DomeOS Team 打造的新一代 Windows 精简方案。" />
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+<style>html{background:#05060a;color-scheme:dark}</style>
+<link rel="stylesheet" href="assets/style.css" />
+<link rel="stylesheet" href="assets/theme.css" />
+</head>
+<body>
+
+<div class="bg-scene" aria-hidden="true">
+  <span class="orb o1"></span>
+  <span class="orb o2"></span>
+</div>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a class="brand" href="#" aria-label="DomeOS-Next 首页">
+      <img class="mark" src="assets/logo.svg" alt="" />
+      <span>DomeOS-Next</span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="主导航">
+      <a href="#idea">理念</a>
+      <a href="#features">特性</a>
+      <a href="#family">系统线</a>
+      <a href="#get">获取</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-primary btn-sm" href="#get">获取</a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="打开菜单" aria-expanded="false">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">
+        <img src="assets/logo.svg" alt="" />
+        <b>DomeOS Team</b> · 已上线
+      </div>
+      <h1>DomeOS-Next</h1>
+      <p class="lead">
+        Next，不只是下一个版本。<br />
+        在保留完整功能的前提下，<strong>把系统占用压到更低</strong>。
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#get">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+          获取 DomeOS-Next
+        </a>
+        <a class="btn btn-ghost" href="#features">查看特性</a>
+      </div>
+      <p class="hero-note">由 CangQiong01 与 wslaoliu7a 制作</p>
+
+      <div class="hero-chips">
+        <span>新一代 Windows 精简方案</span>
+        <span>精简 · 兼容 · 可维护</span>
+        <span>DomeOS Team 出品</span>
+      </div>
+
+      <div class="showcase reveal">
+        <div class="showcase-head">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="showcase-title">DomeOS-Next · 设计取向</span>
+        </div>
+        <div class="showcase-body">
+          <div class="spec-row"><span>定位</span><b>新一代 Windows 精简方案</b></div>
+          <div class="spec-row"><span>原则</span><b><em>精简</em> 不删功能，<em>优化</em> 不影响体验</b></div>
+          <div class="spec-row"><span>关注</span><b>占用 · 稳定 · 兼容</b></div>
+          <div class="spec-row"><span>制作</span><b>CangQiong01 · wslaoliu7a</b></div>
+          <div class="spec-row"><span>状态</span><b><em>已上线</em></b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="idea">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Philosophy</span>
+        <h2 class="section-title">做减法，也做加法</h2>
+        <p class="section-sub">减掉的是负担，加上的是稳定、兼容与长期可用。</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card reveal">
+          <span class="card-index">01</span>
+          <h3>更少的常驻</h3>
+          <p>收敛后台服务与自启动项，把资源留给真正在运行的程序。</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-index">02</span>
+          <h3>更稳的改动</h3>
+          <p>每一项调整都优先考虑兼容性，避免为了轻量引入新的问题。</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-index">03</span>
+          <h3>更长的生命周期</h3>
+          <p>保留驱动与系统更新能力，精简之后依然是一套完整的 Windows。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Features</span>
+        <h2 class="section-title">轻量，但不将就</h2>
+        <p class="section-sub">四个方向，构成 DomeOS-Next 的取舍标准。</p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card reveal">
+          <span class="card-index">01</span>
+          <h3>轻装上阵</h3>
+          <p>减少预装应用与冗余组件，缩短开机时间，降低空闲时的资源占用。</p>
+          <div class="tags"><span>精简预装</span><span>降低占用</span></div>
+        </article>
+        <article class="card reveal">
+          <span class="card-index">02</span>
+          <h3>功能完整</h3>
+          <p>核心组件与常用功能保持完整，日常办公、娱乐与外设使用不受影响。</p>
+          <div class="tags"><span>核心保留</span><span>日常可用</span></div>
+        </article>
+        <article class="card reveal">
+          <span class="card-index">03</span>
+          <h3>驱动兼容</h3>
+          <p>保留硬件驱动支持，尽可能减少因精简带来的设备兼容问题。</p>
+          <div class="tags"><span>驱动支持</span><span>硬件兼容</span></div>
+        </article>
+        <article class="card reveal">
+          <span class="card-index">04</span>
+          <h3>持续可维护</h3>
+          <p>保留系统更新能力，后续修正与调整可以持续跟进。</p>
+          <div class="tags"><span>系统更新</span><span>持续跟进</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="family">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">System Line</span>
+        <h2 class="section-title">两条系统线，一个目标</h2>
+        <p class="section-sub">FireflyOS 与 DomeOS-Next 覆盖不同代际的 Windows，思路一致。</p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card product-card reveal">
+          <div class="product-top">
+            <img src="assets/fireflyos.svg" alt="" />
+            <h3>FireflyOS</h3>
+            <span class="state">已上线</span>
+          </div>
+          <p>覆盖 Windows 7 / 8.1 / 10 / 11，让经典设备与现代设备都能轻一点。</p>
+          <a class="product-link" href="https://liu7pro.github.io/FireflyOS/">访问官网 →</a>
+        </article>
+
+        <article class="card product-card reveal">
+          <div class="product-top">
+            <img src="assets/logo.svg" alt="" />
+            <h3>DomeOS-Next</h3>
+            <span class="state">当前页面</span>
+          </div>
+          <p>面向新一代 Windows 的精简方案，在完整功能与低占用之间取平衡。</p>
+          <a class="product-link" href="https://liu7pro.github.io/DomeOS-Team/">了解团队 →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="quote reveal">
+        <p>精简不是删掉功能，而是让系统回到该有的样子。</p>
+        <span>DomeOS Team</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="get">
+    <div class="container">
+      <div class="cta-panel reveal">
+        <img src="assets/logo.svg" alt="" />
+        <div class="cta-text">
+          <h2>获取 DomeOS-Next</h2>
+          <p>加入 QQ 群获取版本信息、下载渠道与问题反馈。</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="https://qun.qq.com/universal-share/share?ac=1&amp;authKey=lsKOJb8erMGhbsJXod%2B0XTAJxQ8RF/%2BQDX3nmfKz8e3SiW0r%2B7hkaf/28XpO9nh5&amp;busi_data=eyJncm91cENvZGUiOiIxMDQ5NTQyNDIwIiwidG9rZW4iOiJ4a1FiQUh0Q21RVmZxanIxY2dqbWt4aGc0bFlTWHdSUWsyQXdObTZ2cWdiSGEwT052ZmpMKzJ1WmozRFE4NWJEIiwidWluIjoiMTEwMTA5MzIwMyJ9&amp;data=-XsAtAnDk5faXxqsnAo9xvDbPF-DuU3LQBIiDjzuflaYwJnzTMtLfC0toC08eZRQzPF8kByGo5tEKezTOdJegwe347--ObzlwH6d-yCqGNU&amp;svctype=5&amp;tempid=h5_group_info" target="_blank" rel="noopener">加入 QQ 群</a>
+          <a class="btn btn-ghost" href="https://liu7pro.github.io/DomeOS-Team/">访问团队官网</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="#">
+        <img class="mark" src="assets/logo.svg" alt="" />
+        <span>DomeOS-Next</span>
+      </a>
+      <p>DomeOS Team 打造的新一代 Windows 精简方案。</p>
+    </div>
+    <div class="footer-col">
+      <h4>本页</h4>
+      <a href="#idea">理念</a>
+      <a href="#features">特性</a>
+      <a href="#get">获取</a>
+    </div>
+    <div class="footer-col">
+      <h4>DomeOS</h4>
+      <a href="https://liu7pro.github.io/DomeOS-Team/">DomeOS Team</a>
+      <a href="https://liu7pro.github.io/FireflyOS/">FireflyOS</a>
+      <a href="https://liu7pro.github.io/">DomeOS AI</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year">2026</span> DomeOS Team. All rights reserved.</span>
+    <span>DomeOS-Next · 已上线</span>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
