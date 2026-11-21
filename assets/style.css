@@ -587,6 +587,8 @@ html[data-color-mode="light"] .card:hover {
   gap: 12px;
 }
 
+.thanks-grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
 .thanks-card {
   display: flex;
   align-items: center;
@@ -900,7 +902,10 @@ html[data-color-mode="light"] .thanks-card img {
   align-items: center;
   gap: 7px;
   color: var(--text-2);
+  transition: color .25s ease;
 }
+
+.footer-lang:hover { color: var(--blue); }
 
 .footer-lang svg { width: 13px; height: 13px; opacity: .8; }
 
@@ -976,6 +981,7 @@ html[data-color-mode="light"] .thanks-card img {
 @media (max-width: 560px) {
   .grid-3, .grid-2 { grid-template-columns: 1fr; }
   .thanks-grid { grid-template-columns: 1fr; }
+  .thanks-grid.two { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: 1 / -1; }
   .hero-actions .btn { flex: 1 1 100%; }
