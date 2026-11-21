@@ -1108,7 +1108,7 @@ html[data-color-mode="light"] .thanks-card img {
   border-color: var(--cursor-ring, #fff);
   background-color: var(--cursor-fill, rgba(255, 255, 255, .12));
 }
-.cursor-ring.is-down { scale: .82; }
+
 @media (hover: none), (pointer: coarse) {
   .cursor-ring, .cursor-dot { display: none; }
 }
@@ -1116,3 +1116,19 @@ html[data-color-mode="light"] .thanks-card img {
   html, body, a, button, .btn, input, textarea, select, [role="button"] { cursor: none; }
 }
 .cursor-ring.is-hover{box-shadow:0 0 30px var(--cursor-glow)}
+
+/* Next：悬停变成 Fluent 圆角方块，并浮出小窗格 */
+.cursor-ring.is-hover {
+  border-radius: 18px;
+  background: linear-gradient(145deg, rgba(79, 140, 255, .18), rgba(79, 140, 255, .05));
+}
+.cursor-ring::after {
+  content: "";
+  position: absolute;
+  inset: 15px;
+  border-radius: 4px;
+  border: 1px solid rgba(79, 140, 255, .45);
+  opacity: 0;
+  transition: opacity .3s ease, inset .3s ease;
+}
+.cursor-ring.is-hover::after { inset: 13px; opacity: 1; }
