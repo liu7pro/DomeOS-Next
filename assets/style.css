@@ -940,8 +940,6 @@ html[data-color-mode="light"] .thanks-card img {
   .win-float { left: auto; right: 18px; bottom: -14px; }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
   .thanks-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .footer-inner { grid-template-columns: 1fr 1fr; }
-  .footer-brand { grid-column: 1 / -1; }
 }
 
 @media (max-width: 820px) {
@@ -971,6 +969,8 @@ html[data-color-mode="light"] .thanks-card img {
   .cta-panel { flex-direction: column; align-items: flex-start; }
   .cta-actions { width: 100%; }
   .cta-actions .btn { flex: 1; }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+  .footer-brand { grid-column: 1 / -1; }
 }
 
 @media (max-width: 560px) {
