@@ -6,6 +6,7 @@ DomeOS-Next 是 DomeOS Team 基于原版 Windows 打造的精简系统：保留�
 本仓库为 DomeOS-Next 项目官网页面，使用纯静态 HTML / CSS / JavaScript 构建，部署于 GitHub Pages。
 
 - 线上地址：https://liu7pro.github.io/DomeOS-Next/
+- 安装包下载：https://pan.legspcpd.top/s/VduJ
 
 ## 目录结构
 
@@ -19,7 +20,8 @@ DomeOS-Next 是 DomeOS Team 基于原版 Windows 打造的精简系统：保留�
     ├── style.css       站点样式
     ├── main.js         主题切换、导航与入场动画
     ├── logo.svg        站点图标
-    └── fireflyos.svg   FireflyOS 图标（系统线互链）
+    ├── fireflyos.svg   FireflyOS 图标（系统线互链）
+    └── people/         鸣谢名单头像
 ```
 
 ## 深浅色模式
